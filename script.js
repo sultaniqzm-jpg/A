@@ -35,53 +35,7 @@ const products = [
         stock: 5,
         description: "ລາຍລະອຽດສິນຄ້າ 06 ຂອງ Sultaniqz"
     }
-    {
 
- name: "ສິນຄ້າ 07",
-
- price: "0 ກີບ",
-
- stock: 5,
-
- description: "ລາຍລະອຽດສິນຄ້າ 07 ຂອງ Sultaniqz"
-
-},
-
-{
-
- name: "ສິນຄ້າ 08",
-
- price: "0 ກີບ",
-
- stock: 5,
-
- description: "ລາຍລະອຽດສິນຄ້າ 08 ຂອງ Sultaniqz"
-
-},
-
-{
-
- name: "ສິນຄ້າ 09",
-
- price: "0 ກີບ",
-
- stock: 5,
-
- description: "ລາຍລະອຽດສິນຄ້າ 09 ຂອງ Sultaniqz"
-
-},
-
-{
-
- name: "ສິນຄ້າ 10",
-
- price: "0 ກີບ",
-
- stock: 5,
-
- description: "ລາຍລະອຽດສິນຄ້າ 10 ຂອງ Sultaniqz"
-
-},
 ];
 
 
