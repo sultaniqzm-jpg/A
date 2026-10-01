@@ -35,7 +35,6 @@ const products = [
         stock: 5,
         description: "ລາຍລະອຽດສິນຄ້າ 06 ຂອງ Sultaniqz"
     }
-
 ];
 
 
