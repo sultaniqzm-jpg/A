@@ -382,3 +382,94 @@ footer {
     margin-right:8px;
 
 }
+.home-btn{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    background:#050505;
+
+    border:2px solid #e60012;
+
+    color:white;
+
+    padding:12px 30px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 0 10px #e60012,
+    inset 0 0 15px rgba(230,0,18,0.4);
+
+    transition:0.3s;
+
+}
+
+
+/* ຮູບບ້ານ */
+.home-icon{
+
+    width:22px;
+    height:17px;
+
+    background:white;
+
+    display:block;
+
+    position:relative;
+
+    margin-top:8px;
+
+}
+
+
+/* ຫຼັງຄາ */
+.home-icon::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:17px;
+    height:17px;
+
+    background:white;
+
+    transform:rotate(45deg);
+
+    top:-9px;
+    left:3px;
+
+}
+
+
+/* ປະຕູ */
+.home-icon::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:7px;
+    height:11px;
+
+    background:#e60012;
+
+    bottom:0;
+    left:8px;
+
+}
+
+
+/* ຕອນເລືອກ */
+.home-btn:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 25px #ff1025,
+    inset 0 0 20px #e60012;
+
+}
