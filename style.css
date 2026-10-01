@@ -6,15 +6,20 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #050505;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white;
 }
+
 
 /* HEADER */
 
 header {
     height: 80px;
-    background: #080808;
+    background: rgba(8,8,8,0.9);
     border-bottom: 2px solid #e60012;
     display: flex;
     align-items: center;
@@ -51,6 +56,7 @@ nav a.active {
     background: #e60012;
 }
 
+
 /* HERO */
 
 .hero {
@@ -61,7 +67,7 @@ nav a.active {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 25px rgba(230,0,18,0.35);
-    background: #080808;
+    background: rgba(8,8,8,0.8);
 }
 
 .hero img {
@@ -69,7 +75,6 @@ nav a.active {
     height: 100%;
     object-fit: cover;
 }
-
 /* SECTION */
 
 .section {
@@ -84,6 +89,7 @@ nav a.active {
     padding-left: 12px;
 }
 
+
 /* PRODUCTS */
 
 .products {
@@ -93,7 +99,7 @@ nav a.active {
 }
 
 .product {
-    background: #0b0b0b;
+    background: rgba(11,11,11,0.9);
     border: 1px solid #e60012;
     border-radius: 15px;
     overflow: hidden;
@@ -102,7 +108,7 @@ nav a.active {
 
 .product-image {
     height: 180px;
-    background: #111;
+    background: rgba(17,17,17,0.8);
 }
 
 .product-info {
@@ -131,6 +137,7 @@ nav a.active {
     cursor: pointer;
 }
 
+
 /* FOOTER */
 
 footer {
@@ -138,10 +145,9 @@ footer {
     padding: 30px;
     text-align: center;
     border-top: 2px solid #e60012;
-    background: #080808;
+    background: rgba(8,8,8,0.9);
     color: #888;
 }
-
 /* MOBILE */
 
 @media (max-width: 800px) {
@@ -169,18 +175,27 @@ footer {
     .section {
         width: calc(100% - 30px);
     }
+
 }
+
 
 @media (max-width: 480px) {
 
     .products {
         grid-template-columns: 1fr;
     }
+
 }
+
+
+/* BUTTON */
+
 .buy {
-  background: red;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+    background: #e60012;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
 }
