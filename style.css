@@ -369,39 +369,16 @@ footer {
     }
 
 }
-.topup-btn {
+.bolt {
+
+    font-size:28px;
 
     color:white;
 
-    text-decoration:none;
+    text-shadow:
+    0 0 10px white,
+    0 0 20px red;
 
-    padding:12px 30px;
-
-    border-radius:12px;
-
-    background:linear-gradient(45deg,#e60012,#ff3045);
-
-    border:2px solid #ff1025;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    box-shadow:
-    0 0 10px #e60012,
-    0 0 25px rgba(230,0,18,0.8);
-
-    transition:0.3s;
-
-}
-
-
-.topup-btn:hover {
-
-    transform:scale(1.08);
-
-    box-shadow:
-    0 0 20px #ff1025,
-    0 0 40px #ff1025;
+    margin-right:8px;
 
 }
