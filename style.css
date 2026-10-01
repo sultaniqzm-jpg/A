@@ -1,4 +1,4 @@
-* {
+ย* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -473,7 +473,9 @@ footer {
     inset 0 0 20px #e60012;
 
 }
-.menu-btn {
+right: 20px;
+  z-index: 999;  
+    .menu-btn {
   width: 35px;
   height: 28px;
   display: flex;
