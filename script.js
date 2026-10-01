@@ -36,32 +36,35 @@ const products = [
         description: "ລາຍລະອຽດສິນຄ້າ 06 ຂອງ Sultaniqz"
     }
 ];
+
+
 const modal = document.createElement("div");
 
 modal.innerHTML = `
-    <div class="product-modal">
+<div class="product-modal">
 
-        <div class="modal-box">
+<div class="modal-box">
 
-            <button class="close-modal">×</button>
+<button class="close-modal">×</button>
 
-            <h2 id="modal-name"></h2>
+<h2 id="modal-name"></h2>
 
-            <div id="modal-price" class="modal-price"></div>
+<div id="modal-price" class="modal-price"></div>
 
-            <p id="modal-description"></p>
+<p id="modal-stock"></p>
 
-            <button class="order-button">
-                ສັ່ງຊື້
-            </button>
+<p id="modal-description"></p>
 
-        </div>
+<button class="order-button">
+ສັ່ງຊື້
+</button>
 
-    </div>
+</div>
+
+</div>
 `;
 
 document.body.appendChild(modal);
-
 const style = document.createElement("style");
 
 style.innerHTML = `
@@ -105,6 +108,11 @@ style.innerHTML = `
     line-height: 1.6;
 }
 
+#modal-stock {
+    color: #00ff66;
+    font-weight: bold;
+}
+
 .close-modal {
     position: absolute;
     right: 12px;
@@ -134,6 +142,7 @@ style.innerHTML = `
 
 document.head.appendChild(style);
 
+
 const buttons = document.querySelectorAll(".buy");
 
 buttons.forEach((button, index) => {
@@ -143,22 +152,35 @@ buttons.forEach((button, index) => {
         const product = products[index];
 
         document.getElementById("modal-name").textContent = product.name;
+
         document.getElementById("modal-price").textContent = product.price;
-        document.getElementById("modal-description").textContent = product.description;
+
+        document.getElementById("modal-stock").textContent =
+        "ເຫຼືອ " + product.stock + " ອັນ";
+
+        document.getElementById("modal-description").textContent =
+        product.description;
 
         modal.querySelector(".product-modal").style.display = "flex";
+
     });
 
 });
 
+
 document.querySelector(".close-modal").addEventListener("click", () => {
+
     modal.querySelector(".product-modal").style.display = "none";
+
 });
+
 
 modal.querySelector(".product-modal").addEventListener("click", (e) => {
 
     if (e.target.classList.contains("product-modal")) {
+
         modal.querySelector(".product-modal").style.display = "none";
+
     }
 
 });
@@ -195,10 +217,11 @@ border:2px solid red;
 width="250">
 
 <p>ສະແກນ QR ເພື່ອຈ່າຍເງິນ</p>
+
 <p>
-ເລກບັນຊີ:0121238151262
+ເລກບັນຊີ: 0121238151262
 <br>
- Facebook : Sultaniqz
+Facebook : Sultaniqz
 <br>
 WhatsApp : 02054631734
 </p>
@@ -216,14 +239,21 @@ document.body.appendChild(qr);
 
 
 document.getElementById("closeQR").onclick=()=>{
-qr.remove();
+    qr.remove();
 };
 
-
 });
+
+
 function showPaidMessage(){
+
   document.getElementById("paid-message").style.display="block";
+
 }
+
+
 function orderProduct(name){
+
   alert("ທ່ານເລືອກ: " + name);
+
 }
