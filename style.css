@@ -18,19 +18,23 @@ body {
 /* HEADER */
 
 header {
-    height: 80px;
-    background: rgba(8,8,8,0.9);
+    height: 120px;
+    background-image: url("header.png");
+    background-size: cover;
+    background-position: center;
     border-bottom: 2px solid #e60012;
     display: flex;
     align-items: center;
     padding: 0 25px;
     gap: 25px;
+    box-shadow: 0 0 25px rgba(230,0,18,0.5);
 }
 
 .logo-text {
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
     color: white;
+    text-shadow: 0 0 15px red;
 }
 
 .logo-text span {
@@ -46,7 +50,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 12px 18px;
+    padding: 12px 20px;
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -55,8 +59,6 @@ nav a:hover,
 nav a.active {
     background: #e60012;
 }
-
-
 /* HERO */
 
 .hero {
@@ -75,6 +77,8 @@ nav a.active {
     height: 100%;
     object-fit: cover;
 }
+
+
 /* SECTION */
 
 .section {
@@ -132,13 +136,8 @@ nav a.active {
     border: none;
     border-radius: 9px;
     background: #e60012;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-
-/* FOOTER */
+    color:
+        /* FOOTER */
 
 footer {
     margin-top: 60px;
@@ -148,6 +147,8 @@ footer {
     background: rgba(8,8,8,0.9);
     color: #888;
 }
+
+
 /* MOBILE */
 
 @media (max-width: 800px) {
@@ -156,12 +157,21 @@ footer {
         height: auto;
         padding: 18px;
         flex-direction: column;
+        background-position: center;
+    }
+
+    .logo-text {
+        font-size: 32px;
     }
 
     nav {
         margin-left: 0;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    nav a {
+        padding: 10px 15px;
     }
 
     .hero {
@@ -183,6 +193,10 @@ footer {
 
     .products {
         grid-template-columns: 1fr;
+    }
+
+    .logo-text {
+        font-size: 28px;
     }
 
 }
