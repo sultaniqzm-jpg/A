@@ -257,3 +257,42 @@ function orderProduct(name){
   alert("ທ່ານເລືອກ: " + name);
 
 }
+
+
+// =====================
+// AUTO NOTICE SLIDER
+// =====================
+
+const noticeImages = [
+    "status.png",
+    "status2.png",
+    "status3.png"
+];
+
+let noticeIndex = 0;
+
+setInterval(() => {
+
+    const noticeImage = document.getElementById("noticeImage");
+
+    if (noticeImage) {
+
+        noticeIndex++;
+
+        if (noticeIndex >= noticeImages.length) {
+            noticeIndex = 0;
+        }
+
+        noticeImage.style.opacity = "0";
+
+        setTimeout(() => {
+
+            noticeImage.src = noticeImages[noticeIndex];
+
+            noticeImage.style.opacity = "1";
+
+        }, 500);
+
+    }
+
+}, 3000);
